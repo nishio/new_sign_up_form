@@ -1,0 +1,115 @@
+<!doctype html>
+
+    <title>正会員申し込みフォーム - Mitou Foundation</title>
+    <link href="//members.mitou.org/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <link href="//members.mitou.org/Content/css?v=wboQja9ziIa-m1rYR2sMPrISIKbJTsORsOmx8uneSXM1" rel="stylesheet"/>
+
+
+    <script src="//members.mitou.org/bundles/modernizr?v=w9fZKPSiHtN4N4FRqV7jn-3kGoQY5hHpkwFv5TfMrus1"></script>
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-60514144-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+
+<body>
+
+<div class="container body-content">
+
+<form action="http://192.168.137.220:5000/api/" class="form-horizontal" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="8YSEdDtA5vnYIdBaOLYoSRnE_nDaMIDIBfXnZw-5lwVpu-QNUI_izsCP-XSXX9Es7yXWQkiCigcFBZxM0Pi1kHHdt9paEajMmF9S39LPiU56uQ1VjLlxmGCCQG23TwzHv2I7kmPiPHjOvmTS25T19A2" />    <h2>正会員申し込みフォーム</h2>
+    <h4>下記のフォームより正会員申し込みをお願い致します。</h4>
+    <hr />
+<div class="validation-summary-valid text-danger" data-valmsg-summary="true"><ul><li style="display:none"></li>
+</ul></div>    <div class="form-group">
+        <label for="name" class="col col-xs-12 col-sm-2 col-md-2 control-label">氏名*</label>
+        <div class="col col-xs-12 col-sm-5 col-md-5">
+            <div class="input-group">
+                <input class="form-control" data-val="true" data-val-required="The 氏名 field is required." id="name" name="name" placeholder="山田 太郎" type="text" value="" />
+            </div>
+        </div>
+        <span class="field-validation-valid text-danger" data-valmsg-for="name" data-valmsg-replace="true"></span>
+    </div>
+    <div class="form-group">
+        <label for="englishName" class="col col-xs-12 col-sm-2 col-md-2 control-label">英字表記*</label>
+        <div class="col col-xs-12 col-sm-5 col-md-5">
+            <div class="input-group">
+                <input class="form-control" data-val="true" data-val-required="The 英字表記 field is required." id="name_en" name="name_en" placeholder="Yamada Taro" type="text" value="" />
+            </div>
+        </div>
+        <span class="field-validation-valid text-danger" data-valmsg-for="name_en" data-valmsg-replace="true"></span>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col col-xs-12 col-sm-2 col-md-2" for="SelfIntroduction">自己紹介</label>
+        <div class="col col-xs-7 col-sm-8 col-md-8">
+            <textarea class="form-control" cols="20" data-val="true" data-val-required="The 自己紹介 field is required." id="SelfIntroduction" name="SelfIntroduction" placeholder="ご自身のプロフィールを記載してください。" rows="5">
+</textarea>
+            <span class="field-validation-valid text-danger" data-valmsg-for="SelfIntroduction" data-valmsg-replace="true"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col col-xs-12 col-sm-2 col-md-2" for="InterestedIn">興味対象</label>
+        <div class="col col-xs-7 col-sm-8 col-md-8">
+            <textarea class="form-control" cols="20" data-val="true" data-val-required="The 興味対象 field is required." id="InterestedIn" name="InterestedIn" placeholder="ご自身の興味のある事柄を記載してください。" rows="5">
+</textarea>
+            <span class="field-validation-valid text-danger" data-valmsg-for="InterestedIn" data-valmsg-replace="true"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="tel" class="col col-xs-12 col-sm-2 col-md-2 control-label">チェック</label>
+        <div class="col col-xs-7 col-sm-8 col-md-8">
+            <div class="checkbox">
+                <label>
+                    <input data-val="true" data-val-required="The 未踏関係者 field is required." id="IsMitouCreator" name="IsMitouCreator" type="checkbox" value="true" /><input name="IsMitouCreator" type="hidden" value="false" />
+                    未踏関係者である（PM経験者・未踏クリエータ、未踏アドバイザ）
+                </label>
+            </div>
+            <span class="field-validation-valid text-danger" data-valmsg-for="IsMitouCreator" data-valmsg-replace="true"></span>
+            <div class="checkbox">
+                <label><input data-val="true" data-val-required="The 個人会員規約に同意 field is required." id="IsAcceptPersonalReguration" name="IsAcceptPersonalReguration" type="checkbox" value="true" /><input name="IsAcceptPersonalReguration" type="hidden" value="false" />個人会員規約に同意する</label>（<a href="/Documents/Members/%e5%80%8b%e4%ba%ba%e4%bc%9a%e5%93%a1%e8%a6%8f%e7%b4%84.pdf">個人会員規約</a>）
+            </div>
+            <span class="field-validation-valid text-danger" data-valmsg-for="IsAcceptPersonalReguration" data-valmsg-replace="true"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-sm-offset-3 col-md-offset-3">
+            <input type="submit" class="btn btn-block" value="入会申請" />
+        </div>
+    </div>
+    
+</form>
+
+
+        <hr />
+        <footer>
+            <p>&copy; 2015 - Mitou Foundation</p>
+            <p style="font-size:10.5px">
+                Mitou Foundation（一般社団法人未踏）は、日本国内に登記された非営利の一般社団法人です。一般社団法人とは会員のための事業を行う組織で、株式会社と異なりその会費等による及び収益は会員のために使うことが義務付けられております。
+                原則として収益は会員向け事業の費用以外には外部に持ち出すことができず、本団体では解散時には残余財産は国または公共団体に寄付することが定款で義務付けられています。
+            </p>
+        </footer>
+    </div>
+
+    <script src="//members.mitou.org/bundles/jquery?v=8z6YzzH0c3lAT2R_qe2hLO3ZyowcuHmPA5RUiWrC6gU1"></script>
+
+    <script src="//members.mitou.org/bundles/bootstrap?v=NzP9D5jO6GVMzY8_4Kfk811W0VrrhYdC5doOJzjbWJc1"></script>
+    <script src="//members.mitou.org/bundles/jqueryval?v="></script>
+</form>
+</body>
